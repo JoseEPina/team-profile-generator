@@ -1,3 +1,4 @@
+import { writeFile } from 'fs';
 import Employee from '../lib/Employee.js';
 import Manager from '../lib/Manager.js';
 import Engineer from '../lib/Engineer.js';
@@ -40,7 +41,7 @@ function buildHtml(employeeList) {
       let manager = new Manager(element.name, element.id, element.email, element.officeNumber);
       console.log('~ manager', manager);
       htmlBodySection += `
-           <div class="card col-4" style="width: 25rem">
+            <div class="card col-4" style="width: 25rem">
                <img src="..." class="card-img-top" alt="..." />
                <div class="card-body">
                   <h5 class="card-title">${manager.name}</h5>
@@ -62,6 +63,22 @@ function buildHtml(employeeList) {
    employeeData.forEach((element) => {
       let engineer = new Engineer(element.name, element.id, element.email, element.github);
       console.log('~ engineer', engineer);
+      htmlBodySection += `
+            <div class="card col-4" style="width: 25rem">
+               <img src="..." class="card-img-top" alt="..." />
+               <div class="card-body">
+                  <h5 class="card-title">${engineer.name}</h5>
+                  <p class="card-text">${engineer.getRole()}</p>
+               </div>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">ID: ${engineer.id}</li>
+                  <li class="list-group-item">Email: <a href="#" class="card-link">${engineer.email}</a></li>
+                  <li class="list-group-item">
+                     GitHub: <a href="#" class="card-link">${engineer.github}</a>
+                  </li>
+               </ul>
+            </div>
+`;
    });
 
    // Process insterns : create Obj of Class Intern
@@ -70,7 +87,22 @@ function buildHtml(employeeList) {
    employeeData.forEach((element) => {
       let intern = new Intern(element.name, element.id, element.email, element.school);
       console.log('~ intern', intern);
+      htmlBodySection += `
+            <div class="card col-4" style="width: 25rem">
+               <img src="..." class="card-img-top" alt="..." />
+               <div class="card-body">
+                  <h5 class="card-title">${intern.name}</h5>
+                  <p class="card-text">${intern.getRole()}</p>
+               </div>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">ID: ${intern.id}</li>
+                  <li class="list-group-item">Email: <a href="#" class="card-link">${intern.email}</a></li>
+                  <li class="list-group-item">School Name: ${intern.school}</li>
+               </ul>
+            </div>
+`;
    });
+   return htmlTopSection + htmlBodySection + htmlBottomSection;
 }
 
 export { buildHtml };

@@ -3,8 +3,10 @@ import { buildHtml } from './src/buildHtml.js';
 
 const startApp = async () => {
    var employeeList = [];
+   
    await getTeamData(employeeList);
-   buildHtml(employeeList);
+   let htmlPage = buildHtml(employeeList);
+   
 };
 
 startApp();
