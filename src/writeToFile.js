@@ -1,3 +1,5 @@
+import { writeFile } from 'fs';
+
 //TODO: Create a function to write README file
 function writeToFile(fileName, data) {
    return new Promise((resolve, reject) => {
@@ -17,4 +19,4 @@ function writeToFile(fileName, data) {
    });
 }
 
-export default writeToFile;
+export { writeToFile };
