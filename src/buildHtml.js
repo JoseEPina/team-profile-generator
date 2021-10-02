@@ -12,6 +12,7 @@ const htmlTopSection = `
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
       <title>My Team</title>
    </head>
    <body>
@@ -45,7 +46,7 @@ function buildHtml(employeeList) {
                <img src="..." class="card-img-top" alt="..." />
                <div class="card-body">
                   <h5 class="card-title">${manager.name}</h5>
-                  <p class="card-text">${manager.getRole()}</p>
+                  <i class="bi bi-person-circle" style="font-size: 1.1rem"><spam> ${manager.getRole()}</spam></i>
                </div>
                <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${manager.id}</li>
@@ -68,7 +69,7 @@ function buildHtml(employeeList) {
                <img src="..." class="card-img-top" alt="..." />
                <div class="card-body">
                   <h5 class="card-title">${engineer.name}</h5>
-                  <p class="card-text">${engineer.getRole()}</p>
+                  <i class="bi bi-wrench" style="font-size: 1.1rem"><spam> ${engineer.getRole()}</spam></i>
                </div>
                <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${engineer.id}</li>
@@ -92,7 +93,7 @@ function buildHtml(employeeList) {
                <img src="..." class="card-img-top" alt="..." />
                <div class="card-body">
                   <h5 class="card-title">${intern.name}</h5>
-                  <p class="card-text">${intern.getRole()}</p>
+                  <i class="bi bi-eyeglasses" style="font-size: 1.1rem"><spam> ${intern.getRole()}</spam></i>
                </div>
                <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${intern.id}</li>
