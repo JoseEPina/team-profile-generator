@@ -74,8 +74,6 @@ const teamQuestions = [
       message: 'Do you want to add another employee? ',
       default: true,
    },
-
-   {},
 ];
 
 export default teamQuestions;
