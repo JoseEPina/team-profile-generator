@@ -61,6 +61,10 @@ This video depicts how [Jest](https://www.npmjs.com/package/jest) test cases are
 
 By running the extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), it shows the final product in the browser. Clicking on the email link will launch the local email client and fills out the TO: address field. Also, clicking on the GitHub username will open up a new browser tab to the GitHub profile page.
 
+**[VIDEO: PART 1](https://drive.google.com/file/d/150e6GArFjMYDstHilPjs-NLTUl3AGctF/view?usp=sharing)**
+
+**[VIDEO: PART 2](https://drive.google.com/file/d/1299oMyvugK1uAqvRcNRBai5uh9yPsM_m/view?usp=sharing)**
+
 ## Project URLs
 
 -  The URL of the deployed application:
