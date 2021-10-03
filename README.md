@@ -10,6 +10,15 @@ This project takes the input provided by [inquirer.js](https://www.npmjs.com/pac
 
 Some other concepts implemented througout this application are [Object-oriented programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming), [Test-driven development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development).
 
+## Table of Contents
+
+-  [User Story](#userstory)
+-  [Acceptance Criteria](#acceptancecriteria)
+-  [Application Output Examples](#applicationoutputexamples)
+-  [Project URLs](#projecturls)
+-  [License](#license)
+-  [Questions](#questions)
+
 ## User Story
 
 ```
@@ -59,3 +68,17 @@ By running the extension [Live Server](https://marketplace.visualstudio.com/item
 
 -  The URL of the GitHub repository:
    https://github.com/JoseEPina/team-profile-generator
+
+## License
+
+Copyright (c) 2021 Jose E Pina. All rights reserved.
+
+Licensed under the [MIT License](https://choosealicense.com/licenses/mit).
+
+## Questions
+
+Team Profile Generator created by [JoseEPina](https://github.com/JoseEPina).
+
+For any additional questions or comments, please send a message to the following address:
+
+GitHub Email Address: <jose.edpina@gmail.com>
