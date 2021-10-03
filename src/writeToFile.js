@@ -1,6 +1,8 @@
 import { writeFile } from 'fs';
 
-//TODO: Create a function to write html file
+// const writeFile = require('fs');
+
+// function wrapper to create a promise when using fs.writeFile
 function writeToFile(fileName, data) {
    return new Promise((resolve, reject) => {
       writeFile(fileName, data, (err) => {
@@ -20,3 +22,4 @@ function writeToFile(fileName, data) {
 }
 
 export { writeToFile };
+//module.exports = writeToFile;

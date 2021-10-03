@@ -1,5 +1,7 @@
-const Manager = require('../lib/Manager');
+// Get Manager class definition
+const Manager = require('../lib/Manager.js');
 
+// Test case for Manager object creation
 test('creates an manager object', () => {
    const manager = new Manager('Dave', 31, 'dave@mail.com', 2001);
 

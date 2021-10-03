@@ -1,5 +1,7 @@
-const Engineer = require('../lib/Engineer');
+// Get Engineer Class definition
+const Engineer = require('../lib/Engineer.js');
 
+// Test case for Engineer object creation
 test('creates an engineer object', () => {
    const engineer = new Engineer('Frank', 32, 'frankopoole@space.com', 'frankopoole');
 

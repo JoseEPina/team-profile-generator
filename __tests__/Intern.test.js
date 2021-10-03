@@ -1,5 +1,7 @@
-const Intern = require('../lib/Intern');
+// Get Intern Class definition
+const Intern = require('../lib/Intern.js');
 
+// Test case for Intern object creation
 test('creates an intern object', () => {
    const intern = new Intern('Adam', 25, 'adam@workaholics.com', 'internSchool');
 

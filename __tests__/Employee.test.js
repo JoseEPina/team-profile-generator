@@ -1,5 +1,7 @@
-const Employee = require('../lib/Employee');
+// Get Employee class definition
+const Employee = require('../lib/Employee.js');
 
+// Test case for Employee object creation
 test('creates an employee object', () => {
    const employee = new Employee('Hal', 9000, 'hal@gmail.com');
 

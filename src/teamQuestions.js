@@ -1,3 +1,4 @@
+// Inquirer questionnaire for Manager
 const managerQuestions = [
    {
       type: 'input',
@@ -35,6 +36,8 @@ const managerQuestions = [
       message: "Enter manager office's number (Required): ",
    },
 ];
+
+// Inquirer questionnaire for Engineer and Intern
 const teamQuestions = [
    {
       type: 'list',
@@ -106,3 +109,4 @@ const teamQuestions = [
 ];
 
 export { teamQuestions, managerQuestions };
+//module.exports = { teamQuestions, managerQuestions };

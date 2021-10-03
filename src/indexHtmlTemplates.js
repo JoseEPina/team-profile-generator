@@ -1,3 +1,4 @@
+// HTML template for top section of HTML file. Contains bootstrap dependencies.
 const htmlTopSection = `
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +19,7 @@ const htmlTopSection = `
          <div class="row">
 `;
 
+// HTML template for bottom section of HTML file. Contains bootstrap dependencies.
 const htmlBottomSection = `
             </div>
          </div>
@@ -27,3 +29,4 @@ const htmlBottomSection = `
 `;
 
 export { htmlTopSection, htmlBottomSection };
+//module.exports = { htmlTopSection, htmlBottomSection };
