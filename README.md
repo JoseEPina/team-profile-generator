@@ -12,10 +12,10 @@ Some other concepts implemented througout this application are [Object-oriented 
 
 ## Table of Contents
 
--  [User Story](#userstory)
--  [Acceptance Criteria](#acceptancecriteria)
--  [Application Output Examples](#applicationoutputexamples)
--  [Project URLs](#projecturls)
+-  [User Story](#user-story)
+-  [Acceptance Criteria](#acceptance-criteria)
+-  [Application Output Examples](#application-output-examples)
+-  [Project URLs](#project-urls)
 -  [License](#license)
 -  [Questions](#questions)
 
