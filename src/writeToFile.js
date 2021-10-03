@@ -1,6 +1,6 @@
 import { writeFile } from 'fs';
 
-//TODO: Create a function to write README file
+//TODO: Create a function to write html file
 function writeToFile(fileName, data) {
    return new Promise((resolve, reject) => {
       writeFile(fileName, data, (err) => {

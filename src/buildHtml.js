@@ -13,6 +13,7 @@ const htmlTopSection = `
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+      <link rel="stylesheet" href="./style.css"/>
       <title>My Team</title>
    </head>
    <body>
@@ -42,15 +43,16 @@ function buildHtml(employeeList) {
       let manager = new Manager(element.name, element.id, element.email, element.officeNumber);
       console.log('~ manager', manager);
       htmlBodySection += `
-            <div class="card col-4" style="width: 25rem">
-               <img src="..." class="card-img-top" alt="..." />
+            <div class="card col-12 col-sm-5 col-lg-3">
                <div class="card-body">
                   <h5 class="card-title">${manager.name}</h5>
-                  <i class="bi bi-person-circle" style="font-size: 1.1rem"><spam> ${manager.getRole()}</spam></i>
+                  <i class="bi bi-person-circle"><spam> ${manager.getRole()}</spam></i>
                </div>
                <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${manager.id}</li>
-                  <li class="list-group-item">Email: <a href="#" class="card-link">${manager.email}</a></li>
+                  <li class="list-group-item">Email: <a href="mailto:${manager.email}" class="card-link">${
+         manager.email
+      }</a></li>
                   <li class="list-group-item">Office Number: ${manager.officeNumber}</li>
                </ul>
             </div>
@@ -65,17 +67,20 @@ function buildHtml(employeeList) {
       let engineer = new Engineer(element.name, element.id, element.email, element.github);
       console.log('~ engineer', engineer);
       htmlBodySection += `
-            <div class="card col-4" style="width: 25rem">
-               <img src="..." class="card-img-top" alt="..." />
+            <div class="card col-12 col-sm-5 col-lg-3">
                <div class="card-body">
                   <h5 class="card-title">${engineer.name}</h5>
-                  <i class="bi bi-wrench" style="font-size: 1.1rem"><spam> ${engineer.getRole()}</spam></i>
+                  <i class="bi bi-wrench"><spam> ${engineer.getRole()}</spam></i>
                </div>
                <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${engineer.id}</li>
-                  <li class="list-group-item">Email: <a href="#" class="card-link">${engineer.email}</a></li>
+                  <li class="list-group-item">Email: <a href="mailto:${engineer.email}" class="card-link">${
+         engineer.email
+      }</a></li>
                   <li class="list-group-item">
-                     GitHub: <a href="#" class="card-link">${engineer.github}</a>
+                     GitHub: <a href="https://github.com/${
+                        engineer.github
+                     }" target="_blank" rel="noopener noreferrer" class="card-link">${engineer.github}</a>
                   </li>
                </ul>
             </div>
@@ -89,15 +94,16 @@ function buildHtml(employeeList) {
       let intern = new Intern(element.name, element.id, element.email, element.school);
       console.log('~ intern', intern);
       htmlBodySection += `
-            <div class="card col-4" style="width: 25rem">
-               <img src="..." class="card-img-top" alt="..." />
+            <div class="card col-12 col-sm-5 col-lg-3">
                <div class="card-body">
                   <h5 class="card-title">${intern.name}</h5>
-                  <i class="bi bi-eyeglasses" style="font-size: 1.1rem"><spam> ${intern.getRole()}</spam></i>
+                  <i class="bi bi-eyeglasses"><spam> ${intern.getRole()}</spam></i>
                </div>
                <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${intern.id}</li>
-                  <li class="list-group-item">Email: <a href="#" class="card-link">${intern.email}</a></li>
+                  <li class="list-group-item">Email: <a href="mailto:${intern.email}" class="card-link">${
+         intern.email
+      }</a></li>
                   <li class="list-group-item">School Name: ${intern.school}</li>
                </ul>
             </div>

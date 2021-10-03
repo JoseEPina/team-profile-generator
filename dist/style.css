@@ -1,0 +1,73 @@
+/* Declaring global variables for color palette */
+:root {
+   --primary-color: #a7ced3;
+   --secondary-color: #28374f;
+   --tertiary-color: #708090;
+   --white: #fff;
+}
+
+/* Default values for all HTML elements */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Default Font and Font Color */
+body {
+   color: var(--tertiary-color);
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Sticky header and styling */
+header {
+   z-index: 9999;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   color: var(--white);
+   text-align: center;
+   font-weight: bold;
+   padding: 1rem;
+   background-color: var(--secondary-color);
+}
+
+.row {
+   justify-content: space-around;
+}
+
+/* Card item spacing and no padding. Border line added */
+.card {
+   margin: 0.5rem;
+   padding: 0;
+   border: solid 1px;
+}
+
+/* removed flex here due to bad spacing it was creating */
+.card-body {
+   color: var(--white);
+   background-color: var(--secondary-color);
+   flex: none;
+   border-radius: 3px;
+}
+
+/* Extra-Small devices (landscape phones, 321px and up) */
+@media screen and (max-width: 320px) {
+   h5 {
+      font-size: 1.6rem;
+   }
+
+   i {
+      font-size: 1.4rem;
+   }
+
+   body {
+      font-size: 1.2rem;
+   }
+
+   .card-body {
+      font-size: 0.75rem;
+   }
+}
+
+
